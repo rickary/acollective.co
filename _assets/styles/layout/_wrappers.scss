@@ -1,0 +1,44 @@
+//	Wrappers
+//  ========
+
+//	For:
+//	Wrapping & Containing
+
+//	Wrapper
+
+//	Container
+
+
+
+
+
+//------------------------------------//
+//  Wrapper
+//------------------------------------//
+
+.wrapper {
+	width: 90%;
+	max-width: 40em;
+	margin: 40px auto 20px auto;
+	padding: 10px 40px;
+	background: white;
+	border-bottom: solid 2px black;
+}
+
+
+
+
+
+//------------------------------------//
+//  Container
+//------------------------------------//
+
+.container {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+
+
+

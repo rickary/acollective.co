@@ -1,0 +1,18 @@
+dev:
+    scheme: ftp
+    host: YOUR HOSTNAME
+    user: YOUR USERNAME
+    pass: YOUR PASSWORD
+    path:
+        local:
+        remote: 
+
+
+production:
+    scheme: ftp
+    host: YOUR HOSTNAME
+    user: YOUR USERNAME
+    pass: YOUR PASSWORD
+    path:
+        local:
+        remote: 

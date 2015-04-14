@@ -1,0 +1,106 @@
+//	Helpers
+//  =======
+
+//	For:
+//	Small helper classes
+
+
+
+//	Images
+//		Floats
+//		Shapes
+
+//	Floats
+
+//	Text
+//		Align
+//		Hide-Text
+
+
+
+
+
+//------------------------------------//
+//  Images
+//------------------------------------//
+
+img, .img {
+	max-width: 100%;
+	width: 100%;
+}
+
+
+
+//
+//	Floats
+//
+
+.img--right {
+	float: right;
+	margin-left: $gutter;
+	margin-bottom: $gutter;
+}
+
+.img--left {
+	float: left;
+	margin-right: $gutter;
+	margin-bottom: $gutter;
+}
+
+
+
+//
+//	Shapes
+//
+
+.img--rounded {
+	border-radius: $border-radius;
+}
+
+.img--circle {
+	border-radius: 100%;
+}
+
+
+
+
+
+//------------------------------------//
+//  Floats
+//------------------------------------//
+
+.float--right 	{ float: right;}
+.float--left 	{ float: left;}
+
+
+
+
+
+//------------------------------------//
+//  Text
+//------------------------------------//
+
+//
+//	Alignment
+//
+
+.text--left 	{ text-align: left 		!important;}
+.text--right 	{ text-align: right 	!important;}
+.text--center 	{ text-align: center 	!important;}
+
+
+
+//
+//	Hide-Text
+//
+
+.hide-text {
+	text-indent: -999em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+
+

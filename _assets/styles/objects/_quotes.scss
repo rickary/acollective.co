@@ -1,0 +1,96 @@
+//  Quotes
+//  ==========
+
+
+
+//  Inline
+//  Blockquotes
+//		p
+//		cite
+
+
+
+
+
+//------------------------------------//
+//  Config
+//------------------------------------//
+
+$use-quotes		: false!default;
+
+$open-quote 	: "\201C"; 							
+$close-quote 	: "\201D"; 
+
+
+
+
+
+//------------------------------------//
+//  Code
+//------------------------------------//
+
+@if $use-quotes == true{
+
+	//------------------------------------//
+	//  Inline Quotes
+	//------------------------------------//
+
+	q {
+		&:before {
+			content: $open-quote;
+		}
+
+		&:after {
+			content: $close-quote;
+		}
+	}
+
+
+
+
+
+	//------------------------------------//
+	//  Blockquote
+	//------------------------------------//
+
+	blockquote {
+	    quotes:"#{$open-quote}" "#{$close-quote}";
+	    margin-bottom: $gutter;
+	}
+
+
+
+	//
+	//	P
+	//
+
+	blockquote p {
+		margin: 0;
+
+		font-style: italic;
+
+		&:before 				{ content:"#{$open-quote}"; }
+	    &:after 				{ content:""; }
+	    &:last-of-type:after 	{ content:"#{$close-quote}"; }
+	}
+
+
+
+	//
+	//	Cite
+	//
+
+	cite {
+		display: block;
+		margin-top: $gutter/2;
+
+		font-size: $milli-size;
+		text-align: right;
+		text-transform: uppercase;
+
+	    &:before {
+		    content: "\2014 \2009";
+	    }
+	}
+
+}

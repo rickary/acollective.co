@@ -1,0 +1,29 @@
+.landing {
+	text-align: center;
+	padding-bottom: 40px;
+
+	h1 {
+		margin-bottom: 60px;
+
+		@include font-size(26);
+		line-height: 1.2;
+
+		text-transform: uppercase;
+
+		span {
+			display: block;
+			margin-top: 20px;
+			@include font-size(22);
+		}
+	}
+
+	p {
+		max-width: 80%;
+		margin: 0 auto $gutter auto;
+		@include font-size(14);
+
+		&.more-margin {
+			margin-top: 60px;
+		}
+	}
+}

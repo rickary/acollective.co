@@ -1,0 +1,38 @@
+{
+  "name": "yourproject",
+  "version": "0.0.0",
+  "description": "project description",
+  "main": "gulpfile.js",
+
+  "dependencies": {
+    "gulp": ""
+  },
+
+  "devDependencies": {
+    "gulp-sass": "",
+    "gulp-notify": "",
+    "gulp-minify-css": "",
+    "gulp-concat": "",
+    "gulp-uglify": "",
+    "gulp-jshint": "",
+    "gulp-header": ""
+    },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rickary/master-template.git"
+  },
+
+  "author": {
+    "email": "hello@madeinbeta.co.uk",
+    "name": "rickary"
+  },
+
+  "bugs": {
+    "url": "https://github.com/rickary/master-template/issues"
+  }
+}

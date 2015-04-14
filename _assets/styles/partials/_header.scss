@@ -1,0 +1,30 @@
+//	Header
+//  ======
+
+
+
+
+
+//------------------------------------//
+//  Header
+//------------------------------------//
+
+.header {
+		
+}
+
+
+.logo {
+	display: block;
+	margin: 40px auto 60px auto;
+
+	width: 160px;
+	height: 172px;
+
+	text-indent: -999em;
+
+	@include background-image-retina('logo', 'png', 160px, 172px);
+
+	padding: 0;
+	border: none;
+}

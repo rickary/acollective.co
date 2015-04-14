@@ -1,0 +1,214 @@
+//	Variables
+//  =========
+
+//  For:
+//  Global Settings
+
+
+
+//	Layout
+//		Gutters
+//		Grid
+//		Breakpounts
+
+//	Typography
+//		Font-Family
+//		Font-Sizes
+//			Headings
+//			Bigger
+//			Smaller
+//		Font-Weight
+//		Line-Height
+
+//	Colours
+//		Theme
+//		Links
+//		Actions
+
+//	Texture
+//		Borders
+//		Animation
+
+
+
+
+
+
+//------------------------------------//
+//  Layout
+//------------------------------------//
+
+//
+//	Gutters
+//
+
+$gutter                         : 20px;									// Default spacing between objects
+
+
+
+//
+//	Grid
+//
+
+$grid-column-width 				: 60px;
+$grid-gutter 					: 10px;
+$grid-columns  					: 12;
+
+
+
+//
+//	Breakpoints
+//
+
+// Use EMs for Breakpoints: http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
+
+$max-width                      : 87.5em; 								// 1400px
+
+$mobile 						: 30em;
+$tablet 						: 37.5em;
+$desktop 						: 64em;
+
+
+
+
+
+//------------------------------------//
+//  Typography
+//------------------------------------//
+
+//
+//	Font-Family
+//
+
+$font-family                    : Helvetica, Arial, sans-serif;
+$heading-font-family 			: 'aqua_grotesqueregular', sans-serif;	
+
+
+
+//
+//	Font-Sizes
+//
+
+$font-size                 		: 16;
+
+	// 	Headings
+
+	$h1-size 						: 36;									// .alpha
+	$h2-size 						: 30;									// .beta
+	$h3-size 						: 24;									// .gamma
+	$h4-size 						: 20; 									// .delta
+	$h5-size 						: 16; 									// .epsilon
+	$h6-size 						: 14; 									// .zeta
+
+	//	Bigger
+
+	$giga-size 						: 96;									// MASSIVE!
+	$mega-size 						: 72;									// BIGGER
+	$kilo-size 						: 48;									// BIG
+
+	//	Smaller
+
+	$milli-size 					: 14;									// SMALL
+	$micro-size 					: 12;									// SMALLER
+	$nano-size 						: 11;									// TINY
+
+
+
+//
+//	Font-Weight
+//
+
+$font-weight 					: normal;
+$font-weight-bold 				: bold;
+
+
+
+//
+//	Line-Height
+//
+
+$line-height               		: 1.5;									// Line Height
+
+
+
+
+
+//------------------------------------//
+//  Colours
+//------------------------------------//
+
+$body-color                     : #fff;   								
+
+
+
+//
+//	Text
+//		
+
+$text-color                     : #000;	
+$secondary-text-color 			: $text-color;	
+
+
+
+//
+//	Theme
+//						
+
+$primary-color 					: #cc3366;							
+$secondary-color 				: #cc3366;			 				
+$tertiary-color 				: rgb(255,255,255);	 
+
+$black 							: rgb(0,0,0);							
+$white 							: rgb(255,255,255);					
+
+$neutral-color 					: rgb(68,72,76);				
+$light-neutral-color 			: lighten($neutral-color,25%);		
+$lightest-neutral-color 		: #f3f3f3;
+$dark-neutral-color 			: darken($neutral-color, 25%); 		
+
+$border-color 					: $neutral-color;	
+
+
+
+//
+//	Links
+//	
+
+$link-color 		    		: $primary-color;						// Usually your primary colour
+$link-color-hover 				: darken($link-color, 10);				// Darker link colour for :hover
+$link-color-active 				: darken($link-color-hover, 10); 		// Even Darker link colour for :active
+$link-color-visited   			: $link-color; 							// Colour for visited links
+
+
+
+//
+//	Actions
+//		
+
+$positive-color 				: rgb(135,169,103);						
+$negative-color 				: rgb(176,20,0);	
+
+
+
+
+
+//------------------------------------//
+//  Texture
+//------------------------------------//
+
+//
+//	Borders
+//
+
+$border-style					: solid;
+$border-width 					: 1px;
+$border-radius 					: 4px;
+
+
+
+//
+//	Animation
+//
+
+$transition-duration 			: 0.3s;
+$transition-style 				: ease-in-out;

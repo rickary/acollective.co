@@ -1,0 +1,168 @@
+.home {
+	position: relative;
+
+	display: table;
+	width: 100%;
+	height: 100%;				//	set by js
+
+	&.home--white {
+		background: white;
+		color: black;
+	}
+
+	&.home--black {
+		background: black;
+		color: white;
+
+		a {
+			color: white !important;
+		}
+	}
+
+	&:after,
+	&:before {
+		position: absolute;
+
+		display: block;
+		content: '';
+	}
+
+	&:before {
+		top: 1em;
+		right: 1em;
+	}
+
+	&:after {
+		bottom: 1em;
+		left: 1em;
+	}
+}
+
+	.home--one {
+		&:after {
+			width: 136px;
+			height: 100px;
+
+			@include background-image-retina('type--22', 'png', 136px, 100px);
+		}
+	}
+
+	.home--two {
+		&:before {
+			width: 416px;
+			height: 100px;
+
+			@include background-image-retina('type--work', 'png', 416px, 100px);
+		}
+
+		&:after {
+			position: absolute;
+			bottom: 1em;
+			left: 1em;
+
+			@include mq($tablet) {
+				left: 2em;
+			}
+
+			width: 446px;
+			height: 100px;
+
+			@include background-image-retina('type--play', 'png', 446px, 100px);
+		}
+	}
+
+	.home--three {
+
+	}
+
+	.home--four {
+
+	}
+
+
+.home__section-inner {
+	display: table-cell;
+	vertical-align: middle;
+
+	padding: 160px 0;
+
+	p {
+		@include font-size(16);
+		margin-bottom: 1em;
+	}
+
+	ul {
+		margin-bottom: 1em;
+		margin-left: 2em;
+
+		@include font-size(16);
+	}
+}
+
+.home__section-title {
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+.home__section-top {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+
+	width: 30px;
+	height: 30px;
+
+	font-family: $alt-font-family;
+	@include font-size(14);
+
+	@include background-image-retina('to-top', 'png', 30px, 30px);
+	text-indent: -999em;
+}
+
+	.home--black .home__section-top {
+		@include background-image-retina('to-top--white', 'png', 30px, 30px);
+	}
+
+
+
+.home--membership {
+	padding: 160px 0;
+
+	.home__section-inner {
+		padding: 0;
+	}
+}
+
+
+
+.home__break-one {
+	height: 400px;
+	// background: url('/public/images/break-one.jpg') 0 0 no-repeat;
+	// background-size: cover;
+	// background-position: center;
+
+	// img {
+	// 	vertical-align: middle;
+	// 	width: 50%;
+	// 	float: left;
+	// }
+}
+
+.home__break-two {
+	background: url('/public/images/desks.jpg') 0 0 no-repeat;;
+	background-size: cover;
+	background-position: center;
+
+	img {
+		margin: 2em 0;
+	}
+}
+
+.home--enquire {
+	padding: 160px 0;
+}
+
+.home__map {
+	height: 200px;
+	padding: 0;
+}

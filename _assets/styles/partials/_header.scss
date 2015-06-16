@@ -10,21 +10,37 @@
 //------------------------------------//
 
 .header {
-		
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 
-.logo {
+
+
+.header__logo {
+	float: right;
+
 	display: block;
-	margin: 40px auto 60px auto;
+	width: 70px;
+	height: 70px;
 
-	width: 160px;
-	height: 172px;
+	@include background-image-retina('logo', 'png', 70px, 70px);
+}
 
-	text-indent: -999em;
 
-	@include background-image-retina('logo', 'png', 160px, 172px);
 
-	padding: 0;
-	border: none;
+.header__nav {
+	float: left;
+
+	font-family: $alt-font-family;
+
+	@include font-size(14);
+	line-height: 1.3;
+
+	li {
+		margin-bottom: 0;
+	}
 }

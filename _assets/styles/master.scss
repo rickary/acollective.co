@@ -79,7 +79,8 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/forms";
-
+@import "partials/pricing";
+@import "partials/btn";
 
 
 
@@ -89,4 +90,5 @@
 //  Pages
 //------------------------------------//
 
-@import "pages/landing";
+//@import "pages/landing";
+@import "pages/home";

@@ -1,6 +1,4 @@
 .landing {
-	text-align: center;
-	padding-bottom: 40px;
 
 	h1 {
 		margin-bottom: 60px;
@@ -18,12 +16,92 @@
 	}
 
 	p {
-		max-width: 80%;
+		
 		margin: 0 auto $gutter auto;
 		@include font-size(14);
 
 		&.more-margin {
 			margin-top: 60px;
 		}
+
+		@include mq($mobile) {
+			max-width: 80%;
+		}
+
+		&.progress {
+			line-height: 2;
+
+			@include mq($mobile) {
+				.mobile-only {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+.newsletter-form {
+	margin: 3em 0;
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
+
+	li.inline {
+		display: inline;
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+
+		height: 31px;
+		border-bottom: solid 2px black;
+	}
+
+	label,
+	input {
+		@include font-size(14);
+		font-family: $font-family;
+	}
+
+	input {
+		-webkit-appearance: none;
+		appearance: none;
+		border-radius: 0;
+		border: none;
+	}
+
+	input[type="email"] {
+		height: 28px;
+		line-height: 28px;
+		padding: 0px 5px;
+		width: 160px;
+		text-transform: uppercase;
+			font-family: $heading-font-family;
+
+		@include mq($mobile) {
+			width: 200px;
+		}
+
+		@include placeholder() {
+			text-transform: uppercase;
+			font-family: $heading-font-family;
+			line-height: 30px;
+		}
+	}
+
+	.button {
+		background: white;
+		text-transform: uppercase;
+		font-family: $heading-font-family;
+		cursor: pointer;
+		height: 28px;
+		line-height: 28px;
+		padding: 0 5px;
 	}
 }

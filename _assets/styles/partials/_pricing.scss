@@ -1,0 +1,63 @@
+.rates {
+	margin-top: 1em;
+	padding: 0;
+
+	list-style: none;
+}
+
+.rates-table {
+	display: block;
+
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	border-bottom: dotted 1px white;
+
+	&:last-child {
+		padding-bottom: 0;
+		border: none;
+	}
+}
+
+.rates-table__title {
+	margin-bottom: 0.5em;
+	@include font-size(22);
+	font-style:italic;
+}
+
+
+.rates-table__body p {
+	@include font-size(14);
+	font-family: $alt-font-family;
+}
+
+.rates-table__cta {
+	margin-top: 1em;
+}
+
+
+p.rates-price {
+	float: left;
+	margin-bottom: 0;
+	line-height: 30px;
+	font-family: $alt-font-family;
+}
+
+p .rates-price__price {
+	@include font-size(20);
+}
+
+.rates-price__frequency,
+.rates-price__from {
+	@include font-size(14);
+}
+
+.rates-price__vat {
+	@include font-size(11);
+	font-family: $alt-font-family;
+}
+
+.rates-btn {
+	float: right;
+	@include font-size(14);
+}
+

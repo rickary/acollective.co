@@ -90,13 +90,6 @@ a {
 	&:hover, 	
 	&:focus 	{ color: $text-color; }
 	&:active 	{ color: $text-color; }
-
-	padding-bottom: 2px;
-	border-bottom: solid 2px black;
-
-	text-transform: uppercase;
-
-	font-family: $heading-font-family;
 }
 
 

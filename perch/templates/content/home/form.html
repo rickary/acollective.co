@@ -1,0 +1,43 @@
+<div>
+	<h1 class="home__section-title">
+		<perch:content id="title" type="text" label="Title" required="true" title="true" />
+	</h1>
+
+	<perch:form id="contact" method="post" app="perch_forms">
+		<perch:content id="intro" type="textarea" label="Intro" textile="true" editor="markitup" size="s" />
+
+		<ul class="form-fields home__form">
+			<li>
+				<perch:label for="name">Name</perch:label>
+		        <perch:input type="text" id="name" required="true" label="Name" />
+		        <perch:error for="name" type="required">Please add your name</perch:error>
+			</li>
+			<li>
+				<perch:label for="email">Email</perch:label>
+		        <perch:input type="email" id="email" required="true" label="Email" placeholder="you@company.com" />
+		        <perch:error for="email" type="required">Please add your email address</perch:error>
+		        <perch:error for="email" type="format">Please check your email address</perch:error>
+			</li>
+			<li>
+				<perch:label for="twitter">Twitter</perch:label>
+				<perch:input type="text" id="twitter" label="Twitter" placeholder="@" />
+			</li>
+			<li>
+				<perch:label for="website">Website</perch:label>
+				<perch:input type="text" id="website" label="Website" placeholder="http://" />
+			</li>
+			<li>
+				<perch:label for="message">Message</perch:label>
+		        <perch:input type="textarea" id="message" required="true" label="Message" placeholder="Tell us a little bit about who you are, what you do, what your requirements are and when you’d like to move in." />
+		        <perch:error for="message" type="required">Please add a message</perch:error>
+			</li>
+			<li>
+				<perch:input type="submit" id="submit" value="Send" class="btn" />
+			</li>
+		</ul>
+
+	    <perch:success>
+	        <perch:content id="success" type="textarea" label="Thank you message" size="s" textile="true" editor="markitup" />
+	    </perch:success>
+	</perch:form>	
+</div>

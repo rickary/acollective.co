@@ -95,6 +95,7 @@ img, .img {
 //
 
 .hide-text {
+	display: inline-block;
 	text-indent: -999em;
 	white-space: nowrap;
 	overflow: hidden;

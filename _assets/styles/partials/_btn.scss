@@ -1,0 +1,20 @@
+.btn {
+	-webkit-appearance: none;
+	appearance: none;
+
+	display: block;
+	
+	width: 100px;
+	height: 30px;
+
+	background: none;
+	color: white;
+
+	border: solid 1px white;
+	border-radius: 0;
+
+	line-height: 30px;
+	text-align: center;
+
+	cursor: pointer;
+}

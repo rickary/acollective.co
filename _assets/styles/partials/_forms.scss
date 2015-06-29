@@ -35,6 +35,10 @@ label {
 	width: 100px;
 	vertical-align: top;
 	padding: 2px 0;
+
+	@include mq(600px, false, max) {
+		display: block;
+	}
 }
 
 input,
@@ -45,6 +49,11 @@ select {
 	border: 0;
 	border-radius: 0;
 	padding: 2px 5px;
+
+	@include mq(600px, false, max) {
+		display: block;
+		width: 100%;
+	}
 }
 
 input[type="submit"] {

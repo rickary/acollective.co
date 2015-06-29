@@ -21,10 +21,10 @@
     <meta property="og:description" content="A new creative co-working space in York. Opening Summer 2015." />
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://acollective.co" />
-    <meta property="og:image" content="http://acollective.co/public/images/facebook.jpg" />
+    <meta property="og:image" content="http://acollective.co/public/images/fb.jpg" />
     <meta property="fb:app_id" content="804899016214459"/>
 
-    <script src="//use.typekit.net/ita5cmy.js"></script>
+    <script async src="//use.typekit.net/ita5cmy.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
   
 </head>
@@ -37,10 +37,25 @@
 
 				<nav class="header__nav">
 					<ul class="nav nav--stacked">
-						<li><a href="#about" class="js-scrollTo">About</a></li>
-						<li><a href="#membership" class="js-scrollTo">Membership</a></li>
-						<li><a href="#offering" class="js-scrollTo">Our offering</a></li>
-						<li><a href="#enquire" class="js-scrollTo">Enquire</a></li>
+						<?php 
+
+							if (perch_layout_var('class', true) == 'home') {
+								?>
+								<li><a href="#about" class="js-scrollTo">About</a></li>
+								<li><a href="#membership" class="js-scrollTo">Membership</a></li>
+								<li><a href="#offering" class="js-scrollTo">Offer</a></li>
+								<li><a href="#enquire" class="js-scrollTo">Enquire</a></li>
+								<?php
+							} else { ?>
+								<li><a href="/#about" class="js-scrollTo">About</a></li>
+								<li><a href="/#membership" class="js-scrollTo">Membership</a></li>
+								<li><a href="/#offering" class="js-scrollTo">Offer</a></li>
+								<li><a href="/#enquire" class="js-scrollTo">Enquire</a></li>
+							<?php
+							}
+						 ?>
+
+						
 					</ul>
 				</nav>
 			</div>

@@ -1,0 +1,83 @@
+<h1 id="#top" class="section-title"><perch:content id="title" type="text" label="Title" required="true" title="true" /></h1>
+
+
+<perch:form id="coworking" method="post" app="perch_forms">
+	<perch:content id="intro" type="textarea" label="Intro" textile="true" editor="markitup" size="s" />
+
+	<ul class="form-fields">
+		<li class="form-gap"><p class="text--right"><i>* indicates required</i></p></li>
+		<li>
+			<perch:label for="member_name">Member Name*</perch:label>
+	        <perch:input type="text" id="member_name" required="true" label="Member Name" />
+	        <perch:error for="member_name" type="required">Please add your name</perch:error>
+		</li>
+		<li>
+			<perch:label for="company_name">Company Name</perch:label>
+	        <perch:input type="text" id="company_name" label="Company Name" />
+		</li>
+		<li>
+			<perch:label for="address">Address*</perch:label>
+	        <perch:input type="textarea" id="address" required="true" label="Address" />
+	        <perch:error for="address" type="required">Please add your address</perch:error>
+		</li>
+		<li>
+			<perch:label for="phone">Phone*</perch:label>
+	        <perch:input type="text" id="phone" required="true" label="Phone" />
+	        <perch:error for="phone" type="required">Please add your phone number</perch:error>
+		</li>
+		<li>
+			<perch:label for="email">Email*</perch:label>
+	        <perch:input type="email" id="email" required="true" label="Email" placeholder="you@company.com" />
+	        <perch:error for="email" type="required">Please add your email address</perch:error>
+	        <perch:error for="email" type="format">Please check your email address</perch:error>
+		</li>
+		<li>
+			<perch:label for="twitter">Twitter</perch:label>
+			<perch:input type="text" id="twitter" label="Twitter" placeholder="@" />
+		</li>
+		<li>
+			<perch:label for="website">Website</perch:label>
+			<perch:input type="text" id="website" label="Website" placeholder="http://" />
+		</li>
+		<li class="form-gap">
+			<perch:label for="work" class="full">What type of work do you do?</perch:label>
+			<perch:input type="text" id="work" label="Type of work" placeholder="e.g. Designer, Illustrator, Novelist etc." class="full" />
+		</li>
+		<li>
+			<perch:label for="hear_about" class="full">How did you hear about us?</perch:label>
+			<perch:input type="text" id="hear_about" label="How did you hear about us?" class="full" />
+		</li>
+		<li>
+			<perch:label for="work" class="full">On average, how often do you plan to use ACOLLECTIVE facilities?</perch:label>
+			<perch:input type="select" id="work" label="Average Use" class="full" required="true" options="4-5 times a week, 2-3 times a week, once a week, occasionally" />
+		</li>
+		<li>
+			<perch:label for="consent" class="full">We plan to showcase our members on our website. Are you happy for us to publish your company name, email address, website, twitter &amp; type of work?</perch:label>
+			<perch:input type="select" id="consent" label="Consent" class="full" required="true" options="Yes, No" />
+		</li>
+		<li class="form-gap">
+			<perch:content id="licenseinfo" type="textarea" label="Licence Information" textile="true" editor="markitup" size="s" />
+		</li>
+		<li class="form-gap">
+			<b>Membership Fee: £<perch:content id="fee" type="text" label="Membership Fee" required="true" size="s" /> +VAT</b>
+		</li>
+		<li>
+			<perch:label for="term" class="full">Length of initial term?</perch:label>
+			<perch:input type="select" id="term" label="Initial Term" class="full" required="true" options="1 Month, 2 Months, 3 Months, 6 Months, 12 Months (for the price of 10)" />
+		</li>
+		<li>
+			<perch:label for="date" class="full">When would you like to move in? (we’ll let you know as soon as we have a confirmed opening date)</perch:label>
+			<perch:input type="text" id="startdate" label="Start Date" class="full" required="true" value="ASAP" />
+		</li>
+		<li class="form-gap">
+			<perch:content id="confirmation" type="textarea" label="Confirmation" textile="true" editor="markitup" size="s" />
+		</li>
+		<li class="form-gap">
+			<perch:input type="submit" id="submit" value="Send" class="btn" />
+		</li>
+	</ul>
+
+    <perch:success>
+        <perch:content id="success" type="textarea" label="Thank you message" size="s" textile="true" editor="markitup" />
+    </perch:success>
+</perch:form>	

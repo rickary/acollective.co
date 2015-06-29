@@ -36,14 +36,39 @@
 		bottom: 1em;
 		left: 1em;
 	}
+
+	@include mq(600px, false, max) {
+		display: block;
+
+		height: auto;
+
+		
+	}
+
+	@include mq(767px, false, max) {
+		&:after,
+		&:before {
+			display: none;
+		}
+	}
 }
 
 	.home--one {
-		&:after {
-			width: 136px;
-			height: 100px;
 
-			@include background-image-retina('type--22', 'png', 136px, 100px);
+		.home__logo {
+			display: block;
+			width: 348px;
+			height: 35px;
+
+			text-indent: -999em;
+
+			margin-bottom: 4em;
+
+			@include background-image-retina('type--acollective', 'jpg', 348px, 35px);
+
+			@include mq(600px, false, max) {
+				display: none;
+			}
 		}
 	}
 
@@ -72,7 +97,12 @@
 	}
 
 	.home--three {
+		&:after {
+			width: 136px;
+			height: 100px;
 
+			@include background-image-retina('type--22', 'png', 136px, 100px);
+		}
 	}
 
 	.home--four {
@@ -96,6 +126,12 @@
 		margin-left: 2em;
 
 		@include font-size(16);
+	}
+
+	@include mq(600px, false, max) {
+		display: block;
+
+		padding: 4em 0;
 	}
 }
 
@@ -128,6 +164,12 @@
 .home--membership {
 	padding: 160px 0;
 
+	@include mq(600px, false, max) {
+		display: block;
+
+		padding: 4em 0;
+	}
+
 	.home__section-inner {
 		padding: 0;
 	}
@@ -136,33 +178,48 @@
 
 
 .home__break-one {
-	height: 400px;
-	// background: url('/public/images/break-one.jpg') 0 0 no-repeat;
-	// background-size: cover;
-	// background-position: center;
 
-	// img {
-	// 	vertical-align: middle;
-	// 	width: 50%;
-	// 	float: left;
-	// }
+	img {
+		vertical-align: middle;
+	}
 }
 
 .home__break-two {
-	background: url('/public/images/desks.jpg') 0 0 no-repeat;;
-	background-size: cover;
-	background-position: center;
 
 	img {
-		margin: 2em 0;
+		vertical-align: middle;
 	}
 }
 
 .home--enquire {
 	padding: 160px 0;
+
+	@include mq(600px, false, max) {
+		display: block;
+
+		padding: 4em 0;
+	}
 }
 
 .home__map {
 	height: 200px;
 	padding: 0;
+}
+
+
+
+.home__mobile-img {
+	display: none;
+
+	@include mq(600px, false, max) {
+		display: block;
+	}
+}
+
+.home__img {
+	display: block;
+
+	@include mq(600px, false, max) {
+		display: none;
+	}
 }

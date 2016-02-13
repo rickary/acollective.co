@@ -1,0 +1,170 @@
+//	Typography
+//  =========
+
+//	Headings
+
+//	Links
+
+//	Paragraphs
+
+//	Decoration
+//		Italic
+//		Bold
+
+//	Lists
+//		ul
+//		ol
+//		nested
+//		dl
+
+
+
+
+
+//------------------------------------//
+//	Headings
+//------------------------------------//
+
+//	H1-H6
+
+//	Hat Tip:
+//	http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+
+	font-family: $heading-font-family;
+	font-weight: $font-weight-bold;
+}
+
+
+
+h1,.alpha{
+    @include font-size($h1-size);
+}
+
+
+h2,.beta{
+    @include font-size($h2-size);
+}
+
+
+h3,.gamma{
+    @include font-size($h3-size);
+}
+
+
+h4,.delta{
+    @include font-size($h4-size);
+}
+
+
+h5,.epsilon{
+    @include font-size($h5-size);
+}
+
+
+h6,.zeta{
+    @include font-size($h6-size);
+}
+
+
+
+
+
+//------------------------------------//
+//  Links
+//------------------------------------//
+
+a {
+	color: $color-link;
+	cursor: pointer;
+}
+
+
+
+
+
+//------------------------------------//
+//  Paragraphs
+//------------------------------------//
+
+p {
+	@include font-size($font-size);
+	line-height: $line-height;
+}
+
+
+
+
+
+//------------------------------------//
+//  Decoration
+//------------------------------------//
+
+//
+//	Italic
+//
+
+i, em {
+	font-style: italic;
+}
+
+
+
+//
+//	Bold
+//
+
+strong, b {
+	font-weight: $font-weight-bold;
+}
+
+
+
+
+
+//------------------------------------//
+//  Lists
+//------------------------------------//
+
+ul, 
+ol {
+	line-height: $line-height;
+}
+
+
+
+//
+//	Ul
+//
+
+ul {
+	list-style: disc;
+}
+
+
+
+//
+//	Ol
+//
+
+ol {
+	list-style: decimal;
+}
+
+
+
+//
+//	Nested
+//
+
+ul,
+ol {
+	ol, 
+	ul {
+		margin-bottom: 0;
+	}
+}

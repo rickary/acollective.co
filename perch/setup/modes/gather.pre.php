@@ -14,7 +14,7 @@
     $req['db_server']      = "Required";
     $req['db_database']    = "Required";
     $req['db_username']    = "Required";
-    $req['db_password']    = "Required";
+    #$req['db_password']    = "Required";
 
     $Form->set_required($req);
     
@@ -31,6 +31,8 @@
         
         $postvars = array('loginpath', 'db_server', 'db_database', 'db_username', 'db_password', 'licenseKey', 'tz');
         $conf = $Form->receive($postvars);
+
+        if (!isset($conf['db_password'])) $conf['db_password'] = '';
         
         $conf['loginpath'] = rtrim($conf['loginpath'], '/');
 
@@ -42,6 +44,8 @@
 
         if (is_writable($config_file_path)) {
             file_put_contents($config_file_path, $config_file);
+
+            PerchUtil::invalidate_opcache($config_file_path, 10000);
 
             $test_contents = file_get_contents($config_file_path);
 

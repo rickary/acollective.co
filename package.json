@@ -1,38 +1,21 @@
 {
-  "name": "ukcabins.com",
+  "name": "acollective.co",
   "version": "2.0.0",
-  "description": "2014/15 - website for ukcabins.com by Designition",
-  "main": "gulpfile.js",
-
-  "dependencies": {
-    "gulp": ""
-  },
-
+  "description": "Copyright 2016 Rick Chadwick",
+  "private": true,
   "devDependencies": {
-    "gulp-sass": "",
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-header": "",
     "gulp-notify": "",
-    "gulp-minify-css": "",
+    "gulp-sass": "",
     "gulp-concat": "",
     "gulp-uglify": "",
-    "gulp-jshint": "",
-    "gulp-header": ""
-    },
-
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jshint": "",
+    "gulp-jshint": ""
   },
-
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/rickary/master-template.git"
-  },
-
   "author": {
-    "email": "hello@madeinbeta.co.uk",
+    "email": "rick@rickchadwick.co.uk",
     "name": "rickary"
-  },
-
-  "bugs": {
-    "url": "https://github.com/rickary/master-template/issues"
   }
 }

@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `__PREFIX__resource_log` (
   PRIMARY KEY (`logID`),
   KEY `idx_resource` (`resourceID`),
   KEY `idx_fk` (`itemFK`,`itemRowID`),
-  UNIQUE KEY `idx_uni` (`appID`,`itemFK`,`itemRowID`,`resourceID`),
+  UNIQUE KEY `idx_uni` (`appID`,`itemFK`,`itemRowID`,`resourceID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `__PREFIX__page_templates` (
@@ -199,7 +199,6 @@ VALUES
 	(17,'content.pages.delete.own','Delete pages they created themselves',4),
   (18,'content.templates.configure','Configure master pages',6),
   (19,'content.pages.attributes','Edit page titles and attributes',6),
-  (20,'assets.create','Upload assets',2),
   (20,'categories.create','Create new categories',1),
   (21,'categories.delete','Delete categories',2),
   (22,'categories.manage','Manage categories',3),
@@ -260,8 +259,19 @@ CREATE TABLE IF NOT EXISTS `__PREFIX__users` (
   `userHash` char(32) NOT NULL DEFAULT '',
   `roleID` int(10) unsigned NOT NULL DEFAULT '1',
   `userMasterAdmin` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `userPasswordToken` char(255) NOT NULL DEFAULT 'expired',
+  `userPasswordTokenExpires` datetime NOT NULL DEFAULT '2015-01-01 00:00:00',
   PRIMARY KEY (`userID`),
   KEY `idx_enabled` (`userEnabled`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `__PREFIX__user_passwords` (
+  `passwordID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userID` int(10) unsigned NOT NULL,
+  `userPassword` varchar(255) NOT NULL DEFAULT '',
+  `passwordLastUsed` datetime NOT NULL DEFAULT '2000-01-01 00:00:00',
+  PRIMARY KEY (`passwordID`),
+  KEY `idx_user` (`userID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `__PREFIX__navigation` (

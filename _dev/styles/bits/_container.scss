@@ -1,0 +1,10 @@
+//------------------------------------//
+//  Container
+//------------------------------------//
+
+.b-container {
+	width: 100%;
+	max-width: $bp-max;
+	margin: 0 auto;
+	padding: 0 $gutter;
+}

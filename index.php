@@ -1,6 +1,13 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); ?>
-<?php perch_layout('global.head'); ?>
-<?php perch_layout('global.header'); ?>
+<?php
+    include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php');
+    perch_layout('global.head', array(
+        'title'=> 'ACOLLECTIVE',
+        'class'=> 'home'
+    ));
+    perch_layout('global.header', array(
+        'is-home'=> true
+    ));
 
-<?php perch_layout('global.footer'); ?>
-<?php perch_layout('global.scripts'); ?>
+    perch_layout('global.footer');
+    perch_layout('global.scripts');
+?>

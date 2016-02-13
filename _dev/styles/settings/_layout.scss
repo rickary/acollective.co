@@ -14,8 +14,8 @@ $gutter                         : 20px;
 
 // Use EMs for Breakpoints: http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
 
-$bp-mobile 						: 30em;
-$bp-tablet 						: 48em;
-$bp-desktop 					: 64em;
+$bp-mobile 						: 767px;
+$bp-tablet 						: 768px;
+$bp-desktop 					: 960px;
 
-$bp-max 						: 87.5em;
+$bp-max 						: 1280px;

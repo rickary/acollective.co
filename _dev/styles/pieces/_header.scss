@@ -9,6 +9,23 @@
 //  Header
 //------------------------------------//
 
-.header {
-	
+.p-header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+
+.p-header__logo {
+	display: block;
+	float: left;
+
+	width: 280px;
+	height: 28px;
+
+	background: url('/assets/img/logo.svg');
+	background-size: cover;
+
+	text-indent: -999em;
 }

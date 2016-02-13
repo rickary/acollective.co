@@ -6,5 +6,9 @@
 	width: 100%;
 	max-width: $bp-max;
 	margin: 0 auto;
-	padding: 0 $gutter;
+	padding: 0 50px;
+
+	@include mq($bp-mobile, max) {
+		padding: 0 20px;
+	}
 }

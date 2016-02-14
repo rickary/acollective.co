@@ -26,4 +26,4 @@
 
 </head>
 
-	<body <?php if (perch_layout_has('class')) { perch_layout_var('class'); } ?>>
+	<body class="<?php if (perch_layout_has('class')) { perch_layout_var('class'); } ?>">

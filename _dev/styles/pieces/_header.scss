@@ -29,3 +29,25 @@
 
 	text-indent: -999em;
 }
+
+
+
+.p-header__nav {
+	font-family: $heading-font-family;
+	@include font-size(18);
+	font-weight: bold;
+	line-height: 28px;
+	text-transform: uppercase;
+
+	.is-current a {
+		text-decoration: underline;
+	}
+
+	li {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

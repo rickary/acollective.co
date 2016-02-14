@@ -3,6 +3,20 @@
  * Copyright 2016 Rick Chadwick
  * @author rickary <rick@rickchadwick.co.uk>
  */
+@font-face {
+  font-family: 'apercu';
+  src: url("/asseets/fonts/apercu-webfont.eot");
+  src: url("/asseets/fonts/apercu-webfont.eot?#iefix") format("embedded-opentype"), url("/asseets/fonts/apercu-webfont.woff2") format("woff2"), url("/asseets/fonts/apercu-webfont.woff") format("woff"), url("/asseets/fonts/apercu-webfont.ttf") format("truetype"), url("/asseets/fonts/apercu-webfont.svg#apercuregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'apercu';
+  src: url("/asseets/fonts/apercu-bold-webfont.eot");
+  src: url("/asseets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/asseets/fonts/apercu-bold-webfont.woff2") format("woff2"), url("/asseets/fonts/apercu-bold-webfont.woff") format("woff"), url("/asseets/fonts/apercu-bold-webfont.ttf") format("truetype"), url("/asseets/fonts/apercu-bold-webfont.svg#apercubold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -135,14 +149,13 @@ body {
   font-size: 1rem;
   background: #fff;
   color: #FD501E;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "adobe-caslon-pro", serif;
   font-weight: normal;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold; }
+  font-family: "apercu", sans-serif; }
 
 h1, .alpha {
   font-size: 36px;
@@ -170,7 +183,10 @@ h6, .zeta {
 
 a {
   color: #FD501E;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 p {
   font-size: 16px;
@@ -200,7 +216,7 @@ ol ul {
   margin-bottom: 0; }
 
 select, textarea, input {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "adobe-caslon-pro", serif;
   font-size: 16px;
   font-size: 1rem; }
 
@@ -279,6 +295,39 @@ select, textarea, input {
   background: url("/assets/img/logo.svg");
   background-size: cover;
   text-indent: -999em; }
+
+.p-header__nav {
+  font-family: "apercu", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 28px;
+  text-transform: uppercase; }
+  .p-header__nav .is-current a {
+    text-decoration: underline; }
+  .p-header__nav li {
+    margin-right: 15px; }
+    .p-header__nav li:last-child {
+      margin-right: 0; }
+
+.p-footer {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  font-family: "apercu", sans-serif;
+  font-weight: bold; }
+
+.p-footer__copy {
+  float: left;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.p-footer__nav {
+  float: right;
+  font-size: 18px;
+  font-size: 1.125rem; }
+  .p-footer__nav li + li:before {
+    content: "|" "\00A0";
+    font-weight: normal; }
 
 .p-hero {
   position: relative;

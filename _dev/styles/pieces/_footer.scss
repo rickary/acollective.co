@@ -9,6 +9,27 @@
 //  Footer
 //------------------------------------//
 
-.c-footer {
+.p-footer {
+    padding-top: 90px;
+    padding-bottom: 50px;
 
+    font-family: $heading-font-family;
+    font-weight: bold;
+}
+
+
+
+.p-footer__copy {
+    float: left;
+    @include font-size(18);
+}
+
+.p-footer__nav {
+    float: right;
+    @include font-size(18);
+
+    li {
+        // Delimeter
+        &+li:before { content: "|" "\00A0"; font-weight: normal;}
+    }
 }

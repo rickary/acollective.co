@@ -24,6 +24,9 @@
 
 	<?php perch_page_attributes(); ?>
 
+	<script src="https://use.typekit.net/ita5cmy.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 </head>
 
 	<body class="<?php if (perch_layout_has('class')) { perch_layout_var('class'); } ?>">

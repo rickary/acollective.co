@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 
 	font-family: $heading-font-family;
-	font-weight: $font-weight-bold;
 }
 
 
@@ -81,6 +80,11 @@ h6,.zeta{
 a {
 	color: $color-link;
 	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 
@@ -130,7 +134,7 @@ strong, b {
 //  Lists
 //------------------------------------//
 
-ul, 
+ul,
 ol {
 	line-height: $line-height;
 }
@@ -163,7 +167,7 @@ ol {
 
 ul,
 ol {
-	ol, 
+	ol,
 	ul {
 		margin-bottom: 0;
 	}

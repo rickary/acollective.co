@@ -4,7 +4,7 @@
  * @author rickary <rick@rickchadwick.co.uk>
  */
 
-$('.js-hero').css('height', $(document).height());
+$('.js-hero').css('height', $(window).height());
 
 
 $(document).ready(function(){

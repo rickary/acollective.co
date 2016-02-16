@@ -1,0 +1,16 @@
+.p-section-text {
+	max-width: 600px;
+	margin: 60px auto;
+
+	text-align: center;
+}
+
+.p-section-text p {
+	margin-bottom: 40px;
+	@include font-size(34);
+	line-height: 42px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

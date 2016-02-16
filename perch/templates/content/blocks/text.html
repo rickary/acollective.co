@@ -1,0 +1,8 @@
+<section class="p-section p-section--<perch:content type="select" options="white, grey, orange" label="Background Colour" id="background" />">
+	<perch:if exists="title">
+		<h2 class="p-section__title"><perch:content id="title" type="text" label="Section Title" help="optional" /></h2>
+	</perch:if>
+	<div class="p-section-text">
+		<perch:content id="text" type="textarea" label="Text" markdown="true" editor="markitup" size="m" />
+	</div>
+</section>

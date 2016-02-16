@@ -6,7 +6,8 @@
     ));
     perch_layout('global.header', array(
         'is-home'=> true
-    ));
+    ))
+
 
     perch_layout('global.footer');
     perch_layout('global.scripts');

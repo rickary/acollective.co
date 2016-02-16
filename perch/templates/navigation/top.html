@@ -1,0 +1,9 @@
+<perch:before>
+    <ul class="u-float--right b-nav p-header__nav">
+</perch:before>
+		<li<perch:if exists="current_page"> class="is-current"</perch:if>>
+            <a href="<perch:pages id="pagePath" />"><perch:pages id="pageNavText" /></a>   
+        </li>
+<perch:after>
+    </ul>
+</perch:after>

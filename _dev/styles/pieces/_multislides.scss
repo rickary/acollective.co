@@ -1,0 +1,49 @@
+// Multi-Slides
+// ============
+
+//	These are slides with images
+//	On certain pages there are three of different sizes but the same style
+//	It can also be full-width
+
+
+//	For medium & small
+//	If we have a container table to hold them
+//	Then each container within that is a table-cell
+//	Vericall alignde
+
+
+.p-slides {
+
+}
+
+.p-slides--full {
+
+}
+
+.p-slides--large {
+	width: 74.5%;
+	margin-bottom: 100px;
+}
+
+
+.p-two-slides {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+.p-two-slides__inner {
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.p-slides--medium {
+}
+
+.p-slides--small {
+	width: 63%;
+	margin: auto;
+}
+

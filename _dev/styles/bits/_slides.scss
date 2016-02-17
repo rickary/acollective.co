@@ -1,0 +1,147 @@
+//  Slides
+//  ======
+
+//	http://responsiveslides.com/
+
+
+
+//  Config
+//	Slides
+//	Nav 				//	Prev/Next
+//	Pager				//	Numbers or whatever
+
+
+
+
+
+//------------------------------------//
+//  Config
+//------------------------------------//
+
+$use-slides			: true!default;
+
+$use-slides-nav 	: false;
+$use-slides-pager 	: false;
+
+
+
+
+
+//------------------------------------//
+//  Slides
+//------------------------------------//
+
+@if $use-slides == true{
+
+.slides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;	
+}
+
+
+
+	//	Slide
+
+	.slide {
+		-webkit-backface-visibility: hidden;
+		position: absolute;
+		display: none;
+		width: 100%;
+		left: 0;
+		top: 0;
+
+		&:first-child {
+			position: relative;
+  			display: block;
+  			float: left;
+		}
+	}
+
+
+
+	//	Image
+
+	.slide__img {
+		display: block;
+		height: auto;
+		float: left;
+		width: 100%;
+		border: 0;
+	}
+
+}
+
+
+
+
+
+//------------------------------------//
+//  Nav
+//------------------------------------//
+
+@if $use-slides-nav == true{
+
+	.slides__nav {
+		display: block;
+		position: absolute;
+
+		top: 50%;
+	}
+
+
+
+		//	Previous
+		
+		.slides__nav.prev {
+			left: 10px;
+		}
+
+
+
+		//	Next
+
+		.slides__nav.next {
+			right: 10px;
+		}
+
+}
+
+
+
+
+
+//------------------------------------//
+//  Pager
+//------------------------------------//
+
+@if $use-slides-pager == true{
+
+	.slides__tabs {
+		@extend .nav;
+		@extend .nav--banner;
+	}
+
+		.slides__tabs li {
+			width: 15px;
+			height: 15px;
+
+			margin: 0 2px;
+
+			text-indent: -999em;
+
+			border: $black;
+		}
+
+
+
+		//	Current
+
+		li.slides__here {
+			background: $black;
+		}
+
+}

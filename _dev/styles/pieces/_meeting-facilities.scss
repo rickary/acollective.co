@@ -1,0 +1,46 @@
+.p-meeting__container {
+	@include grid-basic(6);
+}
+
+.p-meeting {
+	position: relative;
+
+	display: table;
+	width: 480px;
+	height: 480px;
+
+	margin: 0 auto 40px auto;
+
+	padding-top: 30px;
+
+	border-radius: 100%;
+}
+
+	.p-meeting--always {
+		border: solid 3px $color-theme;
+	}
+
+	.p-meeting--optional {
+		border: dotted 3px $color-theme;
+	}
+
+.p-meeting__inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.p-meeting__title {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p-meeting__list {
+	font-size: 30px;
+}

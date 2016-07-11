@@ -1,0 +1,59 @@
+<div class="p-member-table p-member-table--studio">
+	<div class="p-member-table__header">
+		<h3 class="p-member-table__title"><perch:content id="title" type="text" label="Title" /></h3>
+	</div>
+
+	<div class="p-member-table__desc">
+		<perch:content id="text" type="textarea" label="Description" markdown="true" editor="markitup" size="s" />
+	</div>	
+
+	<div class="p-member-table__studios-container">
+		<div class="p-member-table__studios is-<perch:content id="studio1_availability" type="select" options="available, unavailable" label="Availability" divider-before="Studio One" />">
+			<p class="p-member-table__studios-label">
+				<perch:content id="studio1_label" type="text" label="Label" />
+			</p>
+			<p class="p-member-table__studios-price">
+				<perch:if id="studio1_availability" match="eq" value="unavailable">
+					Occupied
+				<perch:else />
+					<perch:content id="studio1_price" type="text" label="Price" />
+				</perch:if>
+			</p>
+		</div>
+
+		<div class="p-member-table__studios p-member-table__studios--two is-<perch:content id="studio2_availability" type="select" options="available, unavailable" label="Availability" divider-before="Studio Two" />">
+			<p class="p-member-table__studios-label">
+				<perch:content id="studio2_label" type="text" label="Label" />
+			</p>
+			<p class="p-member-table__studios-price">
+				<perch:if id="studio2_availability" match="eq" value="unavailable">
+					Occupied
+				<perch:else />
+					<perch:content id="studio2_price" type="text" label="Price" />
+				</perch:if>
+			</p>
+		</div>
+	</div>
+
+	<perch:if id="studio1_availability" match="eq" value="unavailable">
+		<perch:if id="studio2_availability" match="eq" value="unavailable">
+			<a class="p-member-table__waiting" href="">
+				Join the Waiting List
+			</a>
+		<perch:else />
+			<a class="p-member-table__waiting" href="">
+				Book a Viewing
+			</a>
+		</perch:if>
+	<perch:else />
+		<perch:if id="studio1_availability" match="eq" value="unavailable">
+			<a class="p-member-table__waiting" href="">
+				Join the Waiting List
+			</a>
+		<perch:else />
+			<a class="p-member-table__waiting" href="">
+				Book a Viewing
+			</a>
+		</perch:if>
+	</perch:if>
+</div>

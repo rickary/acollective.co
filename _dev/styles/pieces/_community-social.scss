@@ -1,0 +1,44 @@
+.p-community-container {
+	@include grid-basic(6);
+}
+
+.p-social-links {
+	width: 235px;
+	height: 235px;
+
+	margin: 0 auto;
+
+	border-radius: 100%;
+	border: dotted 3px $color-theme;
+
+	text-align: center;
+
+	h3 {
+		margin-top: 60px;
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.p-listen {
+	width: 236px;
+	height: 236px;
+
+	margin: 0 auto;
+
+	border-radius: 100%;
+	border: solid 3px $color-theme;
+
+	text-align: center;
+
+	h3 {
+		margin-top: 60px;
+		margin-bottom: 20px;
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}

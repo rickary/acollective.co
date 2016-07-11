@@ -1,0 +1,29 @@
+.p-faq {
+	margin-bottom: 40px;
+
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+.p-faq__item {
+	padding-bottom: 30px;
+
+	-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+.p-faq__question {
+	margin-bottom: 5px;
+	font-family: $heading-font-family;
+	font-weight: bold;
+}
+
+.p-faq__answer {
+
+}

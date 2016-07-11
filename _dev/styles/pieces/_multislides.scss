@@ -42,8 +42,47 @@
 .p-slides--medium {
 }
 
-.p-slides--small {
+.p-slides--small ul {
 	width: 63%;
 	margin: auto;
+}
+
+
+
+
+.p-slides .slides__tabs,
+.p-two-slides .slides__tabs {
+	list-style:none;
+	margin-top: 20px;
+    margin-left:0;
+    text-align: center;
+
+    > li{
+
+        display: inline;
+        margin: 0 5px;
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+    }
+
+    li a {
+    	display: block;
+    	width: 15px;
+    	height: 15px;
+
+    	border-radius: 100%;
+    	border: solid 2px white; 
+
+    	text-indent: -999em;
+    }
+
+    li.slides__here a {
+    	background: white;
+    }
 }
 

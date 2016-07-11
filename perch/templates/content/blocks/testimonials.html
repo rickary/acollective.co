@@ -1,0 +1,12 @@
+<div class="p-quote-container">
+<ul class="slides js-quotes p-quotes">
+	<perch:repeater id="quotes" label="Quotes">
+		<li class="slide p-quote-item">
+			<blockquote class="p-quote">
+				<p><perch:content id="quote" label="Quote" type="text" size="xl" /></p>
+				<cite class="p-quote__cite"><perch:content id="cite" label="Citation" type="text" /></cite>
+			</blockquote>
+		</li>
+	</perch:repeater>
+</ul>
+</div>

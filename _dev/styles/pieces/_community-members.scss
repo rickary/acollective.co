@@ -1,0 +1,24 @@
+.p-member-list {
+
+}
+
+.p-member {
+	margin: 0 50px 50px 50px;
+}
+
+.p-member__image {
+	width: 150px;
+	height: 150px;
+
+	border-radius: 100%;
+	border: solid 5px $color-theme;
+}
+
+	.p-member a:hover .p-member__image {
+		border-color: white;
+	}
+
+.p-member__name {
+	color: white;
+	font-size: 14px;
+}

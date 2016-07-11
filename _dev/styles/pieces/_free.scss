@@ -1,0 +1,48 @@
+.p-free {
+	margin: 150px auto;
+	text-align: center;
+
+	li {
+		margin: 0 30px;
+		font-size: 30px;
+		text-transform: uppercase;
+		font-family: $heading-font-family;
+		font-weight: bold;
+		line-height: 1.2;
+
+		span {
+			display: inline-block;
+			max-width: 150px;
+		}
+	}
+}
+
+.p-free-item--one {
+	width: 237px;
+	height: 133px;
+
+	vertical-align: middle;
+	padding-top: 28px;
+
+	@include background-image('/assets/img/shape--ticket', png, 237px, 133px);
+}
+
+.p-free-item--two {
+	width: 227px;
+	height: 224px;
+
+	vertical-align: middle;
+	padding-top: 55px;
+
+	@include background-image('/assets/img/shape--star', png, 227px, 224px);
+}
+
+.p-free-item--three {
+	width: 224px;
+	height: 133px;
+
+	vertical-align: middle;
+	padding-top: 28px;
+
+	@include background-image('/assets/img/shape--oval', png, 224px, 133px);
+}

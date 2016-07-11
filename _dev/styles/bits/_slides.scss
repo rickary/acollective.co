@@ -120,28 +120,28 @@ $use-slides-pager 	: false;
 
 @if $use-slides-pager == true{
 
-	.slides__tabs {
-		@extend .nav;
-		@extend .nav--banner;
-	}
+	// .slides__tabs {
+	// 	@extend .nav;
+	// 	@extend .nav--banner;
+	// }
 
-		.slides__tabs li {
-			width: 15px;
-			height: 15px;
+	// 	.slides__tabs li {
+	// 		width: 15px;
+	// 		height: 15px;
 
-			margin: 0 2px;
+	// 		margin: 0 2px;
 
-			text-indent: -999em;
+	// 		text-indent: -999em;
 
-			border: $black;
-		}
+	// 		border: $black;
+	// 	}
 
 
 
-		//	Current
+	// 	//	Current
 
-		li.slides__here {
-			background: $black;
-		}
+	// 	li.slides__here {
+	// 		background: $black;
+	// 	}
 
 }

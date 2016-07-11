@@ -1,0 +1,11 @@
+<div class="p-meeting p-meeting--optional">
+	<div class="p-meeting__inner">
+		<h3 class="p-meeting__title"><perch:content id="title" label="Title" type="text" /></h3>
+
+		<ul class="b-nav b-nav--stacked p-meeting__list">
+			<perch:repeater id="items" label="Items">
+				<li><perch:content id="item" label="Item" type="text" /></li>
+			</perch:repeater>
+		</ul>
+	</div>
+</div>

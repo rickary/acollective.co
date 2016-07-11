@@ -1,0 +1,20 @@
+<perch:before>
+	<ul class="b-nav b-nav--banner p-member-list js-randomOrder">
+</perch:before>
+<perch:repeater id="members" label="People">
+	<li class="p-member">
+		<perch:if exists="url">
+			<a href="<perch:content id="url" label="URL" type="text" order="3" />">
+		</perch:if>
+
+			<img src="<perch:content id="photo" label="Photo" type="image" width="150" height="150" crop="true" density="2" order="2" />" alt="<perch:content id="name" />" class="p-member__image" />
+			<h3 class="p-member__name"><perch:content id="name" type="text" label="Name" order="1" /></h3>
+
+		<perch:if exists="url">
+			</a>
+		</perch:if>
+	</li>
+</perch:repeater>
+<perch:after>
+	</ul>
+</perch:after>

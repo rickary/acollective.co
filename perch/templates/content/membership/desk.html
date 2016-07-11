@@ -1,0 +1,20 @@
+<div class="p-member-table p-member-table--desk">
+	<div class="p-member-table__header">
+		<h3 class="p-member-table__title"><perch:content id="title" type="text" label="Title" /></h3>
+		<p class="p-member-table__price is-<perch:content id="availability" type="select" options="available, unavailable" label="Availability" />"><perch:content id="price" type="text" label="Price" help="Include currency and VAT" /></p>
+	</div>
+
+	<div class="p-member-table__desc">
+		<perch:content id="text" type="textarea" label="Description" markdown="true" editor="markitup" size="s" />
+	</div>	
+
+	<perch:if id="availability" match="eq" value="unavailable">
+		<a class="p-member-table__waiting" href="">
+			Join the Waiting List
+		</a>
+	<perch:else />
+		<a class="p-member-table__waiting" href="">
+			Book a Viewing
+		</a>
+	</perch:if>
+</div>

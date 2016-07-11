@@ -70,6 +70,7 @@
 
         $data = array();
         $FieldType = PerchFieldTypes::get($Tag->type(), $Form, $Tag, array($Tag), 'markitup');
+        
         $var       = $FieldType->get_raw();
 
         if (PerchUtil::count($var)) {

@@ -1,0 +1,48 @@
+<perch:form id="contact" method="post" app="perch_forms">
+    
+    <div class="p-section-text">
+		<perch:content id="text" type="textarea" label="Text" markdown="true" editor="markitup" size="m" />
+	</div>
+
+	<div class="p-viewing-container">
+		<div class="p-viewing-details">
+			<ul class="b-form-fields">
+				<li>
+					<perch:label for="name">Name</perch:label>
+			        <perch:input type="text" id="name" required="true" label="Name" placeholder="Name*" />
+			        <perch:error for="name" type="required">Please add your name</perch:error>	
+				</li>
+				<li>
+					<perch:label for="company">Company</perch:label>
+        			<perch:input type="text" id="company" label="Company" placeholder="Company" />
+				</li>
+				<li>
+					<perch:label for="email">Email</perch:label>
+			        <perch:input type="email" id="email" required="true" label="Email" placeholder="Email*" />
+			        <perch:error for="email" type="required">Please add your email address</perch:error>
+			        <perch:error for="email" type="format">Please check your email address</perch:error>
+				</li>
+				<li>
+					<perch:label for="phone">Phone</perch:label>
+        			<perch:input type="text" id="phone" label="Phone" placeholder="Phone" />
+				</li>
+			</ul>
+		</div>
+
+		<div class="p-viewing-message">
+			<perch:label for="message">What are you looking for?</perch:label>
+	        <perch:input type="textarea" id="message" required="true" label="Message" placeholder="What are you looking for?" />
+	        <perch:error for="message" type="required">Please add a message</perch:error>	
+		</div>
+
+		<div class="p-viewing-btn">
+			<perch:input type="submit" id="submit" value="Send" />	
+		</div>
+	</div>
+
+    <perch:success>
+    	<div class="p-section-text">
+    		<perch:content id="success" type="textarea" label="Thank you message" textile="true" editor="markitup" size="s" />
+    	</div> 
+    </perch:success>
+</perch:form>

@@ -1,0 +1,23 @@
+.p-map {
+	padding: 200px 0 170px 0;
+	background: url('/assets/img/map.jpg');
+	background-size: cover;
+	background-position: cover;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 50px;
+
+	a {
+		color: white;
+		line-height: 1;
+	}
+
+	span {
+		display: block;
+		font-size: 100px;
+		line-height: 50px;
+	}
+}

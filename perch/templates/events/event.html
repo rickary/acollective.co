@@ -1,0 +1,16 @@
+<div class="p-event">
+	<h3 class="p-event__heading">Regular Meet Ups &amp; Drinks</h3>
+
+	<div class="p-event__inner">
+		<h4 class="p-event__title"><perch:events id="eventTitle" /></h4>
+
+   		<div class="p-event__desc"><perch:events id="eventDescHTML" type="textarea" textile="true" editor="markitup" encode="false" size="s" /></div>	
+
+   		<p class="p-event__date"><perch:events id="eventDateTime" format="l dS F, g.ia" /></p>
+
+   		<perch:if exists="eventLocation">
+   			<p class="p-event__location"><perch:events id="eventLocation" type="text" label="Location" /></p>
+   		</perch:if>
+   		
+	</div>
+</div>

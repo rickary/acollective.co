@@ -15,6 +15,15 @@
 			max-width: 150px;
 		}
 	}
+
+	@include mq($bp-mobile, max) {
+		margin: 30px auto;
+
+		li {
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	}
 }
 
 .p-free-item--one {

@@ -9,6 +9,6 @@
 	padding: 0 50px;
 
 	@include mq($bp-mobile, max) {
-		padding: 0 20px;
+		padding: 0 10px;
 	}
 }

@@ -27,6 +27,12 @@
 	<script src="https://use.typekit.net/ita5cmy.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+	<style type="text/css">
+		.p-hero {
+			background-image: url('/assets/img/slides/<?php perch_layout_var('image'); ?>');
+		}
+	</style>
+
 </head>
 
 	<body class="<?php if (perch_layout_has('class')) { perch_layout_var('class'); } ?>">

@@ -1,6 +1,11 @@
 .p-member-table-container {
 	@include grid-basic(6);
 	padding: 0 5px;
+
+	@include mq($bp-mobile, max) {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 .p-member-table {
@@ -9,7 +14,9 @@
 }
 
 .p-member-table--desk {
-
+	@include mq($bp-mobile, max) {
+		margin-bottom: 30px;
+	}
 }
 
 .p-member-table--studio {
@@ -33,6 +40,10 @@
 	vertical-align: middle;
 	
 	font-size: 20px;
+
+	@include mq($bp-mobile, max) {
+		font-size: 18px;
+	}
 }
 
 	.p-member-table--desk .p-member-table__title {
@@ -47,6 +58,10 @@
 
 	font-family: $heading-font-family;
 	font-size: 20px;
+
+	@include mq($bp-mobile, max) {
+		font-size: 18px;
+	}
 }
 
 	.p-member-table--desk .p-member-table__price {
@@ -61,10 +76,18 @@
 
 	.p-member-table--desk .p-member-table__desc {
 		padding: 40px 20px;
+
+		@include mq($bp-mobile, max) {
+			padding: 30px 15px;
+		}
 	}
 
 	.p-member-table--studio .p-member-table__desc {
 		padding: 100px 20px;
+
+		@include mq($bp-mobile, max) {
+			padding: 30px 15px;
+		}
 	}
 
 

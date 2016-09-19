@@ -8,6 +8,13 @@
     -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
     -moz-column-gap: 40px; /* Firefox */
     column-gap: 40px;
+
+    @include mq($bp-mobile, max) {
+    	margin-bottom: 0;
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+    }
 }
 
 .p-faq__item {

@@ -1,9 +1,7 @@
-<div class="p-hero js-hero" style="background-image: url('<perch:content id="image" label="Image" type="image" size="1500" />');">
-    <ul class="p-hero__caption-list js-hero-captions">
-        <li class="p-hero__caption p-hero__caption--block-of-writers">A Block of Writers</li>
-        <li class="p-hero__caption p-hero__caption--draw-of-illustrators">A Draw of Illustrators</li>
-        <li class="p-hero__caption p-hero__caption--flash-of-photographers">A Flash of Photographers</li>
-        <li class="p-hero__caption p-hero__caption--hustle-of-entrpreneurs">A Hustle of Entrepreneurs</li>
-        <li class="p-hero__caption p-hero__caption--justification-of-designers">A Justification of Designers</li>
+<div class="p-hero js-hero">
+	<ul class="p-hero__caption-list js-hero-captions">
+		<perch:repeater id="captions" label="Captions">
+			<li class="p-hero__caption p-hero__caption--<perch:content id="class" type="text" label="Class" order="2" />"><perch:content id="title" type="text" label="Title" order="1" /></li>
+		</perch:repeater>
     </ul>
 </div>

@@ -23,6 +23,11 @@
 .p-slides--large {
 	width: 74.5%;
 	margin-bottom: 100px;
+
+    @include mq($bp-mobile, max) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -30,6 +35,10 @@
 	display: table;
 	width: 100%;
 	text-align: center;
+
+    @include mq($bp-mobile, max) {
+        display: block;
+    }
 }
 
 .p-two-slides__inner {
@@ -37,6 +46,11 @@
 	width: 50%;
 	vertical-align: middle;
 	text-align: center;
+
+    @include mq($bp-mobile, max) {
+        display: block;
+        width: 100%;
+    }
 }
 
 .p-slides--medium {
@@ -45,6 +59,11 @@
 .p-slides--small ul {
 	width: 63%;
 	margin: auto;
+
+    @include mq($bp-mobile, max) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -56,6 +75,10 @@
 	margin-top: 20px;
     margin-left:0;
     text-align: center;
+
+    @include mq($bp-mobile, max) {
+        margin-top: 10px;
+    }
 
     > li{
 
@@ -84,5 +107,11 @@
     li.slides__here a {
     	background: white;
     }
+}
+
+.p-slides--small .slides__tabs {
+    width: 63%;
+    margin-left: auto;
+    margin-right: auto;
 }
 

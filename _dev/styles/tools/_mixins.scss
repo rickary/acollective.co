@@ -226,3 +226,54 @@
   &::-webkit-input-placeholder { @content }
 }
 
+
+/*
+|--------------------------------------------------------------------------
+|	Shadows
+|--------------------------------------------------------------------------
+*/
+
+/*
+|	Inner
+*/
+
+//	http://css-tricks.com/snippets/css/css-box-shadow/
+
+@mixin inner-shadow($x: 1px, $y: 1px, $blur: 2px, $spread: 2px, $colour: rgba(0,0,0,0.5)) {
+
+-webkit-box-shadow: inset $x $y $blur $spread $colour;
+   -moz-box-shadow: inset $x $y $blur $spread $colour;
+        box-shadow: inset $x $y $blur $spread $colour;
+
+}
+
+
+
+/*
+|	Drop
+*/
+
+// http://css-tricks.com/snippets/css/css-box-shadow/
+
+@mixin drop-shadow($x: 0px, $y: 1px, $blur: 2px, $spread: 2px, $colour: rgba(0,0,0,0.5)) {
+
+-webkit-box-shadow: $x $y $blur $spread $colour;
+   -moz-box-shadow: $x $y $blur $spread $colour;
+        box-shadow: $x $y $blur $spread $colour;
+
+}
+
+
+
+/*
+|	Text
+*/
+
+@mixin text-shadow($x: 0px, $y: 1px, $blur: 2px, $colour: rgba(0,0,0,0.5)) {
+
+-webkit-text-shadow: $x $y $blur $colour;
+   -moz-text-shadow: $x $y $blur $colour;
+        text-shadow: $x $y $blur $colour;
+
+}
+

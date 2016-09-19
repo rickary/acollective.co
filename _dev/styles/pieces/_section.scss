@@ -21,8 +21,12 @@
 	margin-bottom: 100px;
 	
 	font-family: $heading-font-family;
-	@include font-size(16);
+	@include font-size(20);
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+
+	@include mq($bp-mobile, max) {
+		margin-bottom: 50px;
+	}
 }

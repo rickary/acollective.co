@@ -1,8 +1,13 @@
 .p-section-text {
-	max-width: 600px;
+	max-width: 700px;
 	margin: 60px auto;
 
 	text-align: center;
+
+	@include mq($bp-mobile, max) {
+		margin: 20px auto;
+		padding: 0 10px;
+	}
 }
 
 .p-section-text p {
@@ -12,5 +17,11 @@
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+
+	@include mq($bp-mobile, max) {
+		@include font-size(20);
+		line-height: 1.2;
+		margin-bottom: 30px;
 	}
 }

@@ -20,4 +20,14 @@
 		font-size: 100px;
 		line-height: 50px;
 	}
-}
+
+	@include mq($bp-mobile, max) {
+		padding: 50px 0;
+
+		font-size: 20px;
+
+		span {
+			font-size: 50px;
+		}
+	}
+ }

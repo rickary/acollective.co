@@ -59,4 +59,8 @@
 		color: white;
 		text-decoration: none;
 	}
+
+	@include mq($bp-mobile, max) {
+		margin: 0 auto;
+	}
 }

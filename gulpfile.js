@@ -31,8 +31,6 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
 	gulp.src('_dev/scripts/*.js')
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'))
 		.pipe(concat("master.js"))
 		.pipe(header(banner, { pkg : pkg } ))
 		.pipe(gulp.dest('assets/js/'))

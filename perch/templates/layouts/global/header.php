@@ -5,7 +5,7 @@
     }
  ?>
 
-<header class="b-container p-header">
+<header class="b-container p-header js-sticky">
     <a href="/" class="p-header__logo">ACOLLECTIVE</a>
 
     <?php 

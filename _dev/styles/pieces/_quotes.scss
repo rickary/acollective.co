@@ -9,6 +9,10 @@
 	margin: 60px auto;
 
 	text-align: center;
+
+	@include mq($bp-mobile, max) {
+		margin: 20px auto;
+	}
 }
 
 .p-quote-item {
@@ -24,7 +28,11 @@
 	vertical-align: middle;
 
 	p {
-		font-size: 24px;
+		font-size: 28px;
+
+		@include mq($bp-mobile, max) {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -33,6 +41,10 @@
 	margin-top: 30px;
 	font-family: $heading-font-family;
 	font-weight: bold;
+
+	@include mq($bp-mobile, max) {
+		margin-top: 20px;
+	}
 }
 
 
@@ -46,6 +58,10 @@
 	margin-top: -60px;
 
 	text-indent: -999em;
+
+	@include mq($bp-mobile, max) {
+		display: none;
+	}
 }
 
 .p-quotes__nav.prev {

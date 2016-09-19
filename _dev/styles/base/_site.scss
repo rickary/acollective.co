@@ -25,4 +25,11 @@ body {
 	font-family: $font-family;
 	font-weight: $font-weight;
 	line-height: $line-height;
+
+	::selection {
+	  background: lighten($color-theme, 40); /* WebKit/Blink Browsers */
+	}
+	::-moz-selection {
+	  background: lighten($color-theme, 40); /* Gecko Browsers */
+	}
 }

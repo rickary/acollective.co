@@ -7,6 +7,6 @@
         <li><a href="mailto:hello@acollective.co">Email</a></li>
         <li><a href="http://twitter.com/acollectivehq">Twitter</a></li>
         <li><a href="http://facebook.com/acollectivehq">Facebook</a></li>
-        <li><a href="/news">News</a></li>
+        <!-- <li><a href="/news">News</a></li> -->
     </ul>
 </footer>

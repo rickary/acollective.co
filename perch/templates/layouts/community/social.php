@@ -12,8 +12,8 @@
 				<div class="p-social-links">
 					<h3>Follow Us</h3>
 					<ul class="b-nav b-nav--banner">
-						<li><a href="">Twitter</a></li>
-						<li><a href="">Facebook</a></li>
+						<li><a href="http://twitter.com/acollectivehq" class="b-icon--twitter"><span class="u-hide-text">Twitter</span></a></li>
+						<li><a href="http://facebook.com/acollectivehq" class="b-icon--facebook"><span class="u-hide-text">Facebook</span></a></li>
 					</ul>
 				</div>
 			</div>

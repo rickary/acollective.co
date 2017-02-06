@@ -1,0 +1,14 @@
+.p-benefits {
+	margin-bottom: 30px;
+	text-align: center;
+
+	@include font-size(24);
+
+	li {
+		margin-bottom: 30px;
+	}
+
+	@include mq($bp-mobile, max) {
+		@include font-size(18);
+	}
+}

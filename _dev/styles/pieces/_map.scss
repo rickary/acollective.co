@@ -1,33 +1,44 @@
 .p-map {
-	padding: 200px 0 170px 0;
-	background: url('/assets/img/map.jpg');
-	background-size: cover;
-	background-position: cover;
 
-	color: white;
-
-	text-align: center;
-
-	font-size: 50px;
-
-	a {
-		color: white;
-		line-height: 1;
-	}
-
-	span {
-		display: block;
-		font-size: 100px;
-		line-height: 50px;
-	}
-
-	@include mq($bp-mobile, max) {
-		padding: 50px 0;
-
-		font-size: 20px;
-
-		span {
-			font-size: 50px;
+	.p-map-container {
+		iframe {
+			max-height: 300px;
 		}
+	}
+
+		.p-map-container--one {
+			width: 45%;
+			float: left;
+
+			@include mq(767px, max) {
+				width: 90%;
+				float: none;
+				margin: 0 auto 20px auto;
+			}
+		}
+
+		.p-map-container--two {
+			width: 45%;
+			float: right;
+
+			@include mq(767px, max) {
+				width: 90%;
+				float: none;
+				margin: 0 auto;
+			}
+		}
+
+	.p-map-contact {
+
+		margin-bottom: 80px;
+
+		text-align: center;
+
+		font-size: 50px;
+
+		@include mq(767px, max) {
+			font-size: 30px;
+		}
+
 	}
  }

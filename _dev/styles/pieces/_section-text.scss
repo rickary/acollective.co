@@ -24,4 +24,13 @@
 		line-height: 1.2;
 		margin-bottom: 30px;
 	}
+
+	a {
+		color: currentColor;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }

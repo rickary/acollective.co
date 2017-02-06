@@ -1,0 +1,145 @@
+.p-member-form {
+
+	.b-container {
+		max-width: 750px;
+	}
+
+	p, ul, ol {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	ul,ol {
+		margin-left: 40px;
+	}
+
+	b, strong {
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+	}
+}
+
+.p-member-form__intro {
+	margin-bottom: 50px;
+}
+
+.p-member-form .b-form-gap {
+	margin-top: 30px;
+}
+
+.p-member-form {
+
+	form {
+		p {
+			font-family: $font-family;
+		}	
+
+		ul,ol {
+			margin-left: 0;
+		}
+	}
+
+	label {
+		display: inline-block;
+		width: 150px;
+		vertical-align: top;
+		padding: 8px 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: $heading-font-family;
+		font-size: 16px;
+
+		&.is-full {
+			width: 100%;
+		}
+
+		@include mq(500px, max) {
+			width: 100%;
+		}
+	}
+
+	li {
+		margin-bottom: 20px;
+	}
+
+	input, textarea {
+		width: calc(100% - 160px);
+		background: none;
+		border: solid 2px $color-theme;
+		font-family: $heading-font-family;
+
+		&.is-full {
+			width: 100%;
+		}
+
+		@include mq(500px, max) {
+			width: 100%;
+		}
+	}
+
+	input {
+		height: 40px;
+		line-height: 40px;
+		padding: 0 5px;
+	}
+
+	textarea {
+		padding: 5px;
+	}
+
+
+	.b-btn {
+		width: 150px;
+		height: 60px;
+		background: $color-theme;
+		color: white;
+		border: solid 2px $color-theme;
+
+		text-transform: uppercase;
+
+		cursor: pointer;
+
+		@include transition(all 0.2s ease-in-out);
+
+		&:hover {
+			background: white;
+			color: $color-theme;
+		}
+	}
+
+
+	.fee {
+		text-transform: uppercase;
+		font-family: $heading-font-family;
+		font-weight: bold;
+	}
+
+}
+
+
+
+
+
+.p-member-perks {
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	li {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: solid 2px $color-theme;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	h3 {
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: bold;
+	}
+}

@@ -13,7 +13,7 @@
 //  Config
 //------------------------------------//
 
-$use-embeds 	: false !default;
+$use-embeds 	: true !default;
 
 
 
@@ -85,7 +85,7 @@ $use-embeds 	: false !default;
 		max-width: 100% !important; 
 		height: auto !important; 
 
-		padding-bottom: 56.25%;
+		padding-bottom: 300px;
 	} 
 
 

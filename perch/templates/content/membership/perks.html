@@ -1,0 +1,20 @@
+<section class="p-section p-section--white p-member-form">
+
+	<h2 class="p-section__title">Member Perks</h2>
+
+	<div class="b-container">
+		<ul class="b-nav b-nav--stacked p-member-perks">
+
+		<perch:repeater id="perks" label="Perks">
+			<li>
+				<h3><perch:content id="venue" type="text" label="venue" /></h3>
+				<perch:if exists="address">
+					<p>Address: <perch:content id="address" type="text" label="address" /></p>
+				</perch:if>
+				<p><perch:content id="perk" type="text" label="Perk" /></p>
+			</li>
+		</perch:repeater>
+
+		</ul>
+	</div>
+</section>

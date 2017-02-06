@@ -4,6 +4,7 @@
 
 		<div>
 			<div class="p-member-table-container">
+				<?php perch_content('Shared Offering'); ?>
 				<?php perch_content('Desk Offering'); ?>	
 			</div>
 

@@ -14,9 +14,7 @@
 }
 
 .p-member-table--desk {
-	@include mq($bp-mobile, max) {
-		margin-bottom: 30px;
-	}
+	margin-bottom: 30px;
 }
 
 .p-member-table--studio {
@@ -83,7 +81,7 @@
 	}
 
 	.p-member-table--studio .p-member-table__desc {
-		padding: 100px 20px;
+		padding: 76px 20px;
 
 		@include mq($bp-mobile, max) {
 			padding: 30px 15px;

@@ -5,13 +5,15 @@
     }
  ?>
 
-<header class="b-container p-header js-sticky">
-    <a href="/" class="p-header__logo">ACOLLECTIVE</a>
+<header class="p-header js-sticky">
+    <div class="b-container">
+        <a href="/" class="p-header__logo">ACOLLECTIVE</a>
 
-    <?php 
-        perch_pages_navigation(array(
-            'template' => 'top.html',
-            'navgroup' => 'top'
-        ));
-     ?>
+        <?php 
+            perch_pages_navigation(array(
+                'template' => 'top.html',
+                'navgroup' => 'top'
+            ));
+         ?>
+     </div>
 </header>

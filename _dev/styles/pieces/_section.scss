@@ -30,3 +30,17 @@
 		margin-bottom: 50px;
 	}
 }
+
+.p-section__subtitle {
+	margin-bottom: 50px;
+	
+	font-family: $heading-font-family;
+	@include font-size(20);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+
+	@include mq($bp-mobile, max) {
+		margin-bottom: 30px;
+	}
+}
